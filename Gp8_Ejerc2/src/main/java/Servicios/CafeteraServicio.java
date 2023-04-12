@@ -5,6 +5,7 @@
 package Servicios;
 
 import Entidades.Cafetera;
+<<<<<<< HEAD
 
 /**
  *
@@ -38,6 +39,27 @@ public class CafeteraServicio {
 
     public void agregarCafe(Cafetera c1, int cafe) {
         c1.setCapacidadActual(cafe);
+=======
+import java.util.Scanner;
+
+/**
+ *
+ * @author iz-living
+ */
+public class CafeteraServicio {
+
+    Scanner leer = new Scanner(System.in);
+
+    public Cafetera llenarCafetera() {
+
+        Cafetera Nespresso = new Cafetera();
+        Nespresso.setCapacidadMaxima(1000);
+        System.out.println("Se llenará la Cafetera a su máxima capacidad");
+        System.out.println("Presione ENTER");
+        Nespresso.setCantidadActual(Nespresso.getCapacidadMaxima());
+        System.out.println("La cafetera tiene "+Nespresso.getCantidadActual()+ " ml.");
+        return Nespresso;
+>>>>>>> 3332cf9fadbb7146ffece93a470cd236f97659e9
 
     }
 
